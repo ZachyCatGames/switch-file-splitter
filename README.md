@@ -1,1 +1,1 @@
-Only tested using clang, but msbuild/visual studio should also work.
+Only tested using clang, but msvc should also work.
