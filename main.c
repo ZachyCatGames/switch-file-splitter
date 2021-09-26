@@ -13,7 +13,6 @@ int main(int argc, char* argv[]) {
     char* copy_buffer = (char*)malloc(COPY_BUFFER_SIZE);
     char out_path_name[MAX_PATH] = {0};
     const char* in_file_name = argv[1];
-    const size_t in_file_name_size = strnlen(in_file_name, MAX_PATH);
 
     /* Setup out_path_name */
     snprintf(out_path_name, MAX_PATH, "split_%s", in_file_name);
