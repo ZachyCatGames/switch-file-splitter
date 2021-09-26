@@ -19,7 +19,6 @@ int main(int argc, char* argv[]) {
 
     /* Make sure out_path_name doesn't already exist */
     if(GetFileAttributesA(out_path_name) != -1) {
-        char response = 0;
         printf("Output path already exists!\n");
         return 3;
     }
