@@ -14,6 +14,12 @@ int main(int argc, char* argv[]) {
     char out_path_name[MAX_PATH] = {0};
     const char* in_file_name = argv[1];
 
+    /* Check arguments */
+    if(argc != 2) {
+        printf("Invalid arguments!\nUsage: whatever.exe path/to/file\n");
+        return 69;
+    }
+
     /* Setup out_path_name */
     snprintf(out_path_name, MAX_PATH, "split_%s", in_file_name);
 
