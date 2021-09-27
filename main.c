@@ -5,7 +5,7 @@
 #include <fileapi.h>
 
 #define COPY_BUFFER_SIZE 0x4000000
-#define SPLIT_FILE_SIZE 0x100000000
+#define SPLIT_FILE_SIZE 0xFFFF0000
 
 int main(int argc, char* argv[]) {
     FILE* input_file;
